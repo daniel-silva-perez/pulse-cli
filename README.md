@@ -6,18 +6,9 @@ A sleek, terminal-native system monitor with ASCII sparklines, color-coded resou
 
 ![Pulse Demo](https://img.shields.io/badge/python-3.10+-blue) ![License](https://img.shields.io/badge/license-MIT-green)
 
-## Features
+---
 
-- **Multi-view dashboard:** Main overview, Top Processes, Network stats, Disk usage — switch with one key
-- **Live ASCII sparklines:** 120-point rolling history per metric
-- **Per-core CPU bars:** See exactly which cores are hot
-- **Color-coded alerts:** Green → Yellow → Orange → Red as load increases
-- **Process table:** Top 8 CPU consumers with memory bars
-- **Network throughput:** Per-interface stats + live throughput sparklines
-- **Pause mode:** Freeze the display (space bar)
-- **No dependencies beyond psutil:** Zero non-stdlib imports
-
-## Install
+## Quick Start
 
 ```bash
 pip install psutil
@@ -31,6 +22,33 @@ pip install -e .
 pulse
 ```
 
+---
+
+## Project Logo
+
+```
+PULSE
+─────
+   ╭──────────────────╮
+   │  ░▒▓█ MONITOR █▓▒░ │
+   ╰──────────────────╯
+```
+
+---
+
+## Features
+
+- **Multi-view dashboard:** Main overview, Top Processes, Network stats, Disk usage — switch with one key
+- **Live ASCII sparklines:** 120-point rolling history per metric
+- **Per-core CPU bars:** See exactly which cores are hot
+- **Color-coded alerts:** Green → Yellow → Orange → Red as load increases
+- **Process table:** Top 8 CPU consumers with memory bars
+- **Network throughput:** Per-interface stats + live throughput sparklines
+- **Pause mode:** Freeze the display (space bar)
+- **No dependencies beyond psutil:** Zero non-stdlib imports
+
+---
+
 ## Controls
 
 | Key | Action |
@@ -41,6 +59,8 @@ pulse
 | `D` | Disk partitions |
 | `Space` | Pause/Resume |
 | `Q` | Quit |
+
+---
 
 ## Screenshot
 
@@ -58,6 +78,8 @@ pulse
 │ TMP   67.3°C                                          [M/P/N]│
 └─────────────────────────────────────────────────────────────┘
 ```
+
+---
 
 ## Architecture
 
