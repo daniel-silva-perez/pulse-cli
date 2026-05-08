@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pulse-cli"
+version = "1.0.0"
+description = "PULSE — Real-time system resource monitor with terminal visualization"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Leo", email = "leo@example.com"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: System :: Monitoring",
+]
+requires-python = ">=3.10"
+dependencies = ["psutil>=5.9.0"]
+
+[project.scripts]
+pulse = "pulse.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/daniel-silva-perez/pulse-cli"
+Repository = "https://github.com/daniel-silva-perez/pulse-cli"
+
+[tool.setuptools.packages.find]
+where = ["src"]
